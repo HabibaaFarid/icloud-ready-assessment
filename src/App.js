@@ -1,11 +1,19 @@
+import { Layout } from "antd";
+import Home from "./components/Home/Home";
+import SideBar from "./components/SideBar/SideBar";
+import { CartContextProvider } from "./context/cart-context";
 import "./App.css";
-import Home from "./components/Home";
 
 function App() {
   return (
-    <>
-   <Home/>
-    </>
+    <CartContextProvider>
+      <Layout>
+        <Layout>
+          <Home />
+        </Layout>
+        <SideBar />
+      </Layout>
+    </CartContextProvider>
   );
 }
 

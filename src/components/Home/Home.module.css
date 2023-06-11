@@ -1,0 +1,5 @@
+.background {
+  background-size: cover;
+  background-image: url("../../assets/dashboard/blueBG.png");
+  height: 90vh;
+}

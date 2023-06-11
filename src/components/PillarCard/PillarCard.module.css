@@ -45,7 +45,8 @@
   align-self: center;
 }
 .icon-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   column-gap: 10px;
   align-self: center;

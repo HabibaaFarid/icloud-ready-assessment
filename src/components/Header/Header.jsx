@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Layout, Col, Row } from "antd";
+import CartContext from "../../context/cart-context";
 import img1 from "../../assets/header/himg1.png";
 import img2 from "../../assets/header/himg2.png";
 import img3 from "../../assets/header/himg3.png";
@@ -11,6 +12,7 @@ import styles from "./Header.module.css";
 const { Header } = Layout;
 
 const AppHeader = () => {
+  const cartCtx = useContext(CartContext)
   return (
     <Header className={styles.header}>
       <Row>
@@ -46,7 +48,7 @@ const AppHeader = () => {
           </div>
         </Col>
         <Col span={4} className={styles.icons}>
-          <img src={cart} alt="" className={styles.icon1} />
+         {!cartCtx.cartIsShown && <img src={cart} alt="" className={styles.icon1} onClick={cartCtx.onShowCart}/>}
           <img src={kitchen} alt="" className={styles.icon2} />
         </Col>
       </Row>
