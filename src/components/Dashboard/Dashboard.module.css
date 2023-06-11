@@ -1,0 +1,40 @@
+.dashboard-container {
+  height: 90vh;
+  background-size: cover;
+  background-image: url("../../assets/dashboard/background.png");
+  display: grid;
+}
+.title {
+  font-size: 28px;
+  color: #0097c2;
+  margin: 51px 0 0 0;
+  padding-left: 135px;
+}
+.diamond-icon {
+  height: 23px;
+  width: 26px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  justify-self: center;
+}
+.last-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: end;
+  padding-right: 8%;
+}
+
+.price-title {
+  width: 180px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-self: start;
+  align-content: center;
+}
+.price-title-span{
+padding-left: 10px;
+}

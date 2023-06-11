@@ -1,17 +1,20 @@
 .footer {
   display: grid;
+  justify-self: center;
   text-align: center;
   height: 70px;
   background-color: white;
+
 }
 .footer-text {
   font-size: 16px;
-  color:#637182;
+  color: #637182;
+  margin: 0;
 }
-.text-span{
-    color:#052346;
-    font-weight: 500;
+.text-span {
+  color: #052346;
+  font-weight: 500;
 }
-.text-span2{
-    color:#0097C2
+.text-span2 {
+  color: #0097c2;
 }
